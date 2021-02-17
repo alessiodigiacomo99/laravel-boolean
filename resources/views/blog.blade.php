@@ -10,5 +10,6 @@
     <h1>BLOG</h1>
     <a href="/">home</a>
     <a href="/about">about</a>
+    <?php dd($posts) ?>
 </body>
 </html>

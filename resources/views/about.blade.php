@@ -10,5 +10,6 @@
     <h1>ABOUT</h1>
     <a href="/">home</a>
     <a href="/blog">blog</a>
+    
 </body>
 </html>

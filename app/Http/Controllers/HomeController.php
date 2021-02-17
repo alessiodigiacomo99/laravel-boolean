@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class HomeController extends Controller
 {
@@ -14,8 +15,9 @@ class HomeController extends Controller
     {
         return view('about');
     }
-    public function blog()
+    public function blog(Post $post)
     {
-        return view('blog');
+        $posts = $post->all();
+        return view('blog', compact('posts'));
     }
 }
